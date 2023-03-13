@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/log_backg"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_20sdp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Create New Account?Signup"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL/PHONE NO."
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginTop="@dimen/_3sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD."
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/edittext_backg"
+                android:layout_marginTop="@dimen/_3sdp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/login"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#21253d"
+            android:backgroundTint="#21253d"
+            android:gravity="center_horizontal"
+            app:neumorph_backgroundColor="@color/textcolor"
+            app:neumorph_shadowColorDark="#21253d"
+            app:neumorph_shadowColorLight="#21253d">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Forget Password?"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
