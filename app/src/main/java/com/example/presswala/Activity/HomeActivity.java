@@ -19,11 +19,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         activity = this;
 
-        binding.openDrawer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                binding.Drawerlayout.open();
-            }
-        });
+        binding.openDrawer.setOnClickListener(view -> binding.Drawerlayout.open());
     }
 }

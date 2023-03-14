@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PressWala"
         tools:targetApi="31">
         <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.CalculationFinalActivity"
             android:exported="false" />
         <activity

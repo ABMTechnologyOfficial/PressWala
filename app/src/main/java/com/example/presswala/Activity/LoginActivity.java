@@ -1,13 +1,11 @@
 package com.example.presswala.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-import com.example.presswala.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.presswala.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
@@ -22,12 +20,11 @@ public class LoginActivity extends AppCompatActivity {
         activity = this;
 
 
-        binding.login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity,HomeActivity.class);
-                startActivity(intent);
-            }
+        binding.cardLogin.setOnClickListener(view -> {
+            if (binding.edtEmail.getText().toString().equals("admin@gmail.com"))
+            startActivity(new Intent(activity, HomeActivity.class));
+            else
+            startActivity(new Intent(activity, HomeActivity.class));
         });
 
     }

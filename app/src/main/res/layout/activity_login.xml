@@ -9,10 +9,9 @@
 
 
     <LinearLayout
-        android:layout_width="@dimen/_90sdp"
-        android:layout_height="@dimen/_90sdp"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_95sdp"
         android:background="@drawable/log_backg"
-        android:gravity="start"
         android:orientation="vertical"
         android:paddingVertical="@dimen/_20sdp">
 
@@ -33,9 +32,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
-                android:text="back"
+                android:text="Back"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_15sdp" />
 
         </LinearLayout>
 
@@ -58,7 +57,7 @@
             android:padding="@dimen/_10sdp"
             android:layout_gravity="center"
             android:textColor="@color/white"
-            android:textSize="@dimen/_22ssp" />
+            android:textSize="@dimen/_20ssp" />
 
 
         <TextView
@@ -76,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
-            android:text="Create New Account?Signup"
+            android:text="Create New Account? Signup"
             android:textColor="@color/white"
             android:paddingHorizontal="@dimen/_10sdp"
             android:layout_gravity="center"
@@ -93,17 +92,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EMAIL/PHONE NO."
+                android:text="EMAIL."
                 android:textColor="@color/white"
                 android:fontFamily="@font/roboto_regular"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_10sdp"
+                android:id="@+id/edt_email"
                 android:background="@drawable/edittext_backg"
                 android:layout_marginTop="@dimen/_3sdp"/>
 
@@ -115,13 +115,14 @@
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/white"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_10sdp"
+                android:id="@+id/edt_password"
                 android:background="@drawable/edittext_backg"
                 android:layout_marginTop="@dimen/_3sdp"/>
 
@@ -134,7 +135,7 @@
 
 
         <soup.neumorphism.NeumorphCardView
-            android:id="@+id/login"
+            android:id="@+id/card_login"
             style="@style/Widget.Neumorph.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -163,6 +164,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="gone"
             android:text="Forget Password?"
             android:textColor="@color/white"
             android:paddingHorizontal="@dimen/_10sdp"

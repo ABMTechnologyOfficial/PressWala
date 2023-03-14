@@ -24,15 +24,10 @@ public class SplashActivity extends AppCompatActivity {
         activity = this;
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                Intent i = new Intent(SplashActivity.this, RegisterActivity.class);
-                startActivity(i);
-                finish();
-            }
-
+        new Handler().postDelayed(() -> {
+            Intent i = new Intent(SplashActivity.this, RegisterActivity.class);
+            startActivity(i);
+            finish();
         }, SPLASH_SCREEN_TIME_OUT);
 
     }

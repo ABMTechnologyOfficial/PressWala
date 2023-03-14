@@ -8,8 +8,8 @@
     tools:context=".Activity.SignupActivity">
 
     <LinearLayout
-        android:layout_width="@dimen/_90sdp"
-        android:layout_height="@dimen/_90sdp"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_95sdp"
         android:background="@drawable/log_backg"
         android:orientation="vertical"
         android:paddingVertical="@dimen/_20sdp">
@@ -31,9 +31,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
-                android:text="back"
+                android:text="Back"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/_15sdp" />
 
         </LinearLayout>
 
@@ -53,9 +53,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Login"
+            android:text="Signup"
             android:textColor="@color/white"
-            android:textSize="@dimen/_22ssp" />
+            android:textSize="@dimen/_20ssp" />
 
 
         <TextView
@@ -66,17 +66,7 @@
             android:paddingHorizontal="@dimen/_10sdp"
             android:text="Create New Account"
             android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:paddingHorizontal="@dimen/_10sdp"
-            android:text="Create New Account?Signup"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp" />
+            android:textSize="@dimen/_18ssp" />
 
 
         <LinearLayout
@@ -92,7 +82,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:text="NAME."
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
@@ -109,7 +99,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:text="EMAIL"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
@@ -127,7 +117,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:text="PHONE NO."
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
@@ -145,7 +135,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:text="PASSWORD."
                 android:textColor="@color/white"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_11ssp" />
 
 
             <EditText
@@ -160,6 +150,7 @@
 
 
         <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card_signup"
             style="@style/Widget.Neumorph.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

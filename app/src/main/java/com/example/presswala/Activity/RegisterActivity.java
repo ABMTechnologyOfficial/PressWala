@@ -1,13 +1,11 @@
 package com.example.presswala.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-import com.example.presswala.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.presswala.databinding.ActivityRegisterBinding;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -21,24 +19,9 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         activity = this;
 
+        binding.tologin.setOnClickListener(view -> startActivity(new Intent(activity, LoginActivity.class)));
 
-        binding.tologin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity,LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        binding.tosignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity,SignupActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
+        binding.tosignup.setOnClickListener(view -> startActivity(new Intent(activity, SignupActivity.class)));
 
     }
 }

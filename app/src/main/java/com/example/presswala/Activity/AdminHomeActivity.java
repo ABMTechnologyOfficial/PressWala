@@ -4,21 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Html;
 
-import com.example.presswala.R;
-import com.example.presswala.databinding.ActivityMyOrdersBinding;
+import com.example.presswala.databinding.ActivityAdminHomeBinding;
 
-public class MyOrdersActivity extends AppCompatActivity {
-    ActivityMyOrdersBinding binding;
-    Activity activity;
+public class AdminHomeActivity extends AppCompatActivity {
+    private ActivityAdminHomeBinding binding;
+    private Activity activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMyOrdersBinding.inflate(getLayoutInflater());
+        binding = ActivityAdminHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         activity = this;
+
+
     }
 }
